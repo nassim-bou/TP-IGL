@@ -33,8 +33,6 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tabInt;
 	}
 
-
-
 	public static void sortVector( int tab[] ) {
 
 		boolean permut=true;
@@ -68,12 +66,12 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 
 	public static void multiplyVector ( int tab[] , int facteur) {
 		for (int i = 0 ; i<tab.length ; i++)
-			tab[i] *= facteur;
+			tab[i] *= facteur ;
 	}
 
 	public static void printVector (int tab[]) {
 		for (int i = 0 ; i<tab.length ; i++) {
-			System.out.println(tab[i]);
+			System.out.println(i + " - " + tab[i]);
 		}
 	}
 
