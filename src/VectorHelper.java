@@ -1,16 +1,19 @@
+/*
+    Author : Amine Athmani
+    Date : 11/10/2017
+ */
 
-public class VectorHelper {
+
+public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 	
-	public static int[] Sommer (int tab1[], int tab2[]){
+	public static int[] Sommer (int tab1[], int tab2[]){ // Sommer deux tableau case par case et génere un troisieme tableau
 		int tabInter [] = null ;
 		try{
 			if (tab1.length != tab2.length)
-				throw new VectorDifferentSizeException();
+				throw new VectorDifferentSizeException(); // Lancer une exception ( taille differente )
 			tabInter = new int [tab1.length*2];
 			for (int i=0 ; i <tab1.length ; i++)
-				tabInter[i]= tab1[i];
-			for (int i=0 ; i <tab2.length ; i++)
-				tabInter[i+tab1.length] = tab2[i];
+				tabInter[i]= tab1[i] + tab2[i];
 			
 		}catch  (VectorDifferentSizeException e){
 			e.printStackTrace();
