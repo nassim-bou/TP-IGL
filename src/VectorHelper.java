@@ -57,19 +57,19 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		int j = 0;
 
 		for (int i = 0 ; i<(tab.length / 2)-1  ; i++) {
-			j = tab[i];
+			j = tab[i]; // permutation
 			tab[i] = tab[tab.length - i -1  ];
 			tab[tab.length - i -1 ] = j;
 		}
 
 	}
 
-	public static void multiplyVector ( int tab[] , int facteur) {
+	public static void multiplyVector ( int tab[] , int facteur) { //multiplier chaque case par facteur
 		for (int i = 0 ; i<tab.length ; i++)
 			tab[i] *= facteur ;
 	}
 
-	public static void printVector (int tab[]) {
+	public static void printVector (int tab[]) { //afficher le tableau
 		for (int i = 0 ; i<tab.length ; i++) {
 			System.out.println(i + " - " + tab[i]);
 		}
