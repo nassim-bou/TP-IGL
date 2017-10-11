@@ -29,5 +29,48 @@ public class VectorHelper {
 		}
 		return tabInt;
 	}
-	
+
+	public static void sortVector( int tab[] ) {
+
+		boolean permut=true;
+		int inter;
+
+		while (permut) {
+			permut = false;
+			for (int i = 0; i < tab.length - 1; i++) {
+				if (tab[i] > tab[i + 1]) {
+					permut = true;
+					inter = tab[i];
+					tab[i] = tab[i + 1];
+					tab[i+1] = inter;
+				}
+			}
+		}
+	}
+
+	public static void reverseVector ( int tab[]) {
+
+		int inter;
+		int j = 0;
+
+		for (int i = 0 ; i<(tab.length / 2)-1  ; i++) {
+			j = tab[i];
+			tab[i] = tab[tab.length - i -1  ];
+			tab[tab.length - i -1 ] = j;
+		}
+
+	}
+
+	public static void multiplyVector ( int tab[] , int facteur) {
+		for (int i = 0 ; i<tab.length ; i++)
+			tab[i] *= facteur;
+	}
+
+	public static void printVector (int tab[]) {
+		for (int i = 0 ; i<tab.length ; i++) {
+			System.out.println(tab[i]);
+		}
+	}
+
+
 }
