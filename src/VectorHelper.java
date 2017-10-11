@@ -12,10 +12,10 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 			if (tab1.length != tab2.length)
 				throw new VectorDifferentSizeException(); // Lancer une exception ( taille differente )
 			tabInter = new int [tab1.length*2];
-			for (int i=0 ; i <tab1.length ; i++)
+			for (int i=0 ; i <tab1.length ; i++) // sommer case par case
 				tabInter[i]= tab1[i] + tab2[i];
 			
-		}catch  (VectorDifferentSizeException e){
+		}catch  (VectorDifferentSizeException e){ // catch the exception
 			e.printStackTrace();
 		}
 		return tabInter;
@@ -33,16 +33,17 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tabInt;
 	}
 
-	public static void sortVector( int tab[] ) {
+	public static void sortVector( int tab[] ) { // Trier le tableau tab en utilisant un tri par bull
 
-		boolean permut=true;
-		int inter;
+		boolean permut=true; // nous indique si il y'avait une perumtaion
+		int inter; // variable intermédiare
 
 		while (permut) {
 			permut = false;
 			for (int i = 0; i < tab.length - 1; i++) {
 				if (tab[i] > tab[i + 1]) {
 					permut = true;
+					// Permuter
 					inter = tab[i];
 					tab[i] = tab[i + 1];
 					tab[i+1] = inter;
@@ -51,10 +52,17 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		}
 	}
 
-	public static void reverseVector ( int tab[]) {
+	public static void reverseVector ( int tab[]) { // inverser l'ordre des elements de tab
+		/*
+		Example d'utilisation :
+			int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
 
-		int inter;
-		int j = 0;
+			apres l'appel
+
+			tab[] = {-5,25,1,45,35,102,89,64,8,54,31};
+		 */
+
+		int j = 0; // varibale inter pour la permutation
 
 		for (int i = 0 ; i<(tab.length / 2)-1  ; i++) {
 			j = tab[i]; // permutation
@@ -74,6 +82,4 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 			System.out.println(i + " - " + tab[i]);
 		}
 	}
-
-
 }
