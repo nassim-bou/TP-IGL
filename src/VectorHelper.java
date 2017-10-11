@@ -63,12 +63,12 @@ public class VectorHelper {
 
 	public static void multiplyVector ( int tab[] , int facteur) {
 		for (int i = 0 ; i<tab.length ; i++)
-			tab[i] *= facteur +1;
+			tab[i] -= facteur ;
 	}
 
 	public static void printVector (int tab[]) {
 		for (int i = 0 ; i<tab.length ; i++) {
-			System.out.println(tab[i]);
+			System.out.println(i + " - " + tab[i]);
 		}
 	}
 
