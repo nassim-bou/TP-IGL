@@ -30,6 +30,8 @@ public class VectorHelper {
 		return tabInt;
 	}
 
+
+
 	public static void sortVector( int tab[] ) {
 
 		boolean permut=true;
