@@ -18,7 +18,7 @@ public class VectorHelperTest extends TestCase {
             assertEquals(tab[i],TAB1_PLUS_TAB2[i]);
         }
     }
-
+    
     public void testMaxMin() throws Exception {
         int tab[] = VectorHelper.maxMin(TAB1);
         assertEquals(tab[1],-5);
