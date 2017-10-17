@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VectorHelperTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VectorHelperTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VectorHelperTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -60,18 +60,8 @@
       <file leaf-file-name="Main.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/Main.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -107,6 +97,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/VectorHelper.java" />
         <option value="$PROJECT_DIR$/src/VectorHelperTest.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -185,7 +176,70 @@
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.VectorHelperTest.testMultiplyVector">
+    <configuration default="false" name="VectorHelperTest.testSommer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TP-IGL" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VectorHelperTest" />
+      <option name="METHOD_NAME" value="testSommer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="VectorHelperTest.testMaxMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TP-IGL" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VectorHelperTest" />
+      <option name="METHOD_NAME" value="testMaxMin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="VectorHelperTest.testSortVector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TP-IGL" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VectorHelperTest" />
+      <option name="METHOD_NAME" value="testSortVector" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="VectorHelperTest.testReverseVector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TP-IGL" />
@@ -226,63 +280,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="VectorHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TP-IGL" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VectorHelperTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="VectorHelperTest.testSommer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TP-IGL" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VectorHelperTest" />
-      <option name="METHOD_NAME" value="testSommer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TP-IGL" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -490,19 +487,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testReverseVector" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testMultiplyVector" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VectorHelperTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testSommer" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testSommer" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testMaxMin" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testSortVector" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testReverseVector" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testMultiplyVector" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testMultiplyVector" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testReverseVector" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testSommer" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VectorHelperTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testMultiplyVector" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testReverseVector" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testSortVector" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testMaxMin" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VectorHelperTest.testSommer" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -623,24 +620,22 @@
       <option name="project" value="LOCAL" />
       <updated>1508275048996</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added documentation">
+      <created>1508275090879</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1508275090879</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VectorHelperTest - 2017.10.17 at 20h 52m 09s.xml">
-      <configuration name="VectorHelperTest" configurationId="JUnit" />
+    <history-entry file="VectorHelperTest_testMaxMin - 2017.10.17 at 23h 18m 45s.xml">
+      <configuration name="VectorHelperTest.testMaxMin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VectorHelperTest_testMultiplyVector - 2017.10.17 at 20h 51m 14s.xml">
+    <history-entry file="VectorHelperTest_testMultiplyVector - 2017.10.17 at 23h 19m 02s.xml">
       <configuration name="VectorHelperTest.testMultiplyVector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorHelperTest_testMultiplyVector - 2017.10.17 at 20h 51m 58s.xml">
-      <configuration name="VectorHelperTest.testMultiplyVector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorHelperTest_testMultiplyVector - 2017.10.17 at 20h 54m 32s.xml">
-      <configuration name="VectorHelperTest.testMultiplyVector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorHelperTest_testReverseVector - 2017.10.17 at 20h 48m 10s.xml">
-      <configuration name="VectorHelperTest.testReverseVector" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VectorHelperTest_testReverseVector - 2017.10.17 at 20h 50m 04s.xml">
       <configuration name="VectorHelperTest.testReverseVector" configurationId="JUnit" />
@@ -651,10 +646,19 @@
     <history-entry file="VectorHelperTest_testReverseVector - 2017.10.17 at 20h 54m 13s.xml">
       <configuration name="VectorHelperTest.testReverseVector" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VectorHelperTest_testReverseVector - 2017.10.17 at 23h 18m 55s.xml">
+      <configuration name="VectorHelperTest.testReverseVector" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="VectorHelperTest_testSommer - 2017.10.17 at 20h 53m 16s.xml">
       <configuration name="VectorHelperTest.testSommer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VectorHelperTest_testSommer - 2017.10.17 at 23h 18m 38s.xml">
+      <configuration name="VectorHelperTest.testSommer" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="VectorHelperTest_testSortVector - 2017.10.17 at 20h 48m 03s.xml">
+      <configuration name="VectorHelperTest.testSortVector" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorHelperTest_testSortVector - 2017.10.17 at 23h 18m 49s.xml">
       <configuration name="VectorHelperTest.testSortVector" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -788,14 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -804,10 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VectorHelperTest.java">
+    <entry file="file://$PROJECT_DIR$/bin/Main.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -816,6 +812,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VectorHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
