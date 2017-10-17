@@ -1,27 +1,50 @@
-/*
-    Author : Amine Athmani
-    Date : 11/10/2017
+/**
+ 	* ce projet est dans le cadre du TP IGL 1 CS
+ 	* @version : 1.0
+    * @author : Amine Athmani , Nassim Bouarour
+    * Date : 11/10/2017
  */
 
+/**
+ * Cette classe est une classe utilitaire pour établir des methodes sur les vecteurs
+ */
+public class VectorHelper  {
 
-public class VectorHelper  { // Fournir des fonctions sur les vecteurs
-	
-	public static int[] Sommer (int tab1[], int tab2[]){ // Sommer deux tableau case par case et génere un troisieme tableau
+	/**
+	 * sommer deux tableau case par case et génere un troisieme tableau
+	 * @param tab1 : tableau d'entiers 1
+	 * @param tab2 : tableau d'entiers 2
+	 * @return un tableau d'entiers dont chaque case est la somme de deux cases tab1[i] + tab2[i]
+	 * @throws VectorDifferentSizeException qui indique que les tableaux ont des tailles differentes
+	 * Example d'utilisation :
+	 * int TAB1[] = {31,54,8,64,89,102,35,45,1,25,-5};
+	 * int TAB2[]= {11,22,33,44,55,66,77,88,99,10,11};
+	 * apres l'appel
+	 * TAB1_PLUS_TAB2[] == {42,76,41,108,144,168,112,133,100,35,6};
+	 */
+
+	public static int[] sommer(int tab1[], int tab2[]) throws VectorDifferentSizeException{
 		int tabInter [] = null ;
-		try{
 			if (tab1.length != tab2.length)
 				throw new VectorDifferentSizeException(); // Lancer une exception ( taille differente )
 			tabInter = new int [tab1.length];
 			for (int i=0 ; i <tab1.length ; i++) // sommer case par case
 				tabInter[i]= tab1[i] + tab2[i];
-		}catch  (VectorDifferentSizeException e){ // catch the exception
-			e.printStackTrace();
-		}
 		return tabInter;
 	}
-	
-	
-	public static int[] maxMin (int tab1[]){ // tab[0] est le max , tab[1] est le min
+
+	/**
+	 *
+	 * @param tab1 le tableau dont on va determiner le min et max
+	 * @return un tableau dont le premier element est le max et le deuxieme est le min
+	 * Example d'utilisation :
+	 * int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
+	 * apres l'appel
+	 * tabInt[0] == 102;
+	 * tabInt[1] == -5;
+	 */
+
+	public static int[] maxMin (int tab1[]){
 		int tabInt[]= new int[2];
 	    tabInt[0] = tab1[0];
 	    tabInt[1] = tab1[0];
@@ -32,6 +55,11 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tabInt;
 	}
 
+	/**
+	 * Creer une copie de tab1
+	 * @param tab1 le tableau dont on va creer une copie
+	 * @return un tableau qui est une copie exacte de tab1
+	 */
 	public static int[] copyVector ( int tab1[]  ) {
 		int tab2[] = new int[tab1.length];
 		for (int i = 0 ; i < tab1.length ; i++ )
@@ -40,7 +68,17 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tab2;
 	}
 
-	public static int[] sortVector( int tab[] ) { // Trier le tableau tab en utilisant un tri par bull
+	/**
+	 * Trier le tableau tab en utilisant un tri par bull
+	 * @param tab un tableau d'entiers qu'on va trier
+	 * @return une copie triée de tab
+	 * Example d'utilisation :
+	 * int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
+	 * apres l'appel
+	 * tab[] = {-5,25,1,45,35,102,89,64,8,54,31};
+	 */
+
+	public static int[] sortVector( int tab[] ) {
 
 		int tab2[] = copyVector(tab);
 
@@ -62,18 +100,19 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tab2;
 	}
 
-	public static int[] reverseVector ( int tab[]) { // inverser l'ordre des elements de tab
+	/**
+	 * inverser l'ordre des elements de tab
+	 * @param tab un tableau d'entier qu'on va inverser
+	 * @return une copie inversée de tab
+	 * Example d'utilisation :
+	 * int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
+	 * apres l'appel
+	 * tab[] = {-5,25,1,45,35,102,89,64,8,54,31};
+	 */
+
+	public static int[] reverseVector ( int tab[]) {
 
 		int tab2[] = copyVector(tab);
-
-		/*
-		Example d'utilisation :
-			int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
-
-			apres l'appel
-
-			tab[] = {-5,25,1,45,35,102,89,64,8,54,31};
-		 */
 
 		int j = 0; // varibale inter pour la permutation
 
@@ -85,7 +124,18 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tab2;
 	}
 
-	public static int[] multiplyVector ( int tab[] , int facteur) { //multiplier chaque case par facteur
+	/**
+	 * multiplier chaque case par facteur
+	 * @param tab tableau d'entiers
+	 * @param facteur le facteur de multiplication
+	 * @return une copie du tableau tab multiplié par facteur
+	 * Example d'utilisation :
+	 * int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
+	 * apres l'appel
+	 * tab[] = {62,108,16,128,178,204,70,90,2,50,-10};
+	 */
+
+	public static int[] multiplyVector ( int tab[] , int facteur) {
 
 		int tab2[] = copyVector(tab);
 
