@@ -82,4 +82,5 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 			System.out.println(i + " - " + tab[i]);
 		}
 	}
+
 }
