@@ -11,10 +11,9 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		try{
 			if (tab1.length != tab2.length)
 				throw new VectorDifferentSizeException(); // Lancer une exception ( taille differente )
-			tabInter = new int [tab1.length*2];
+			tabInter = new int [tab1.length];
 			for (int i=0 ; i <tab1.length ; i++) // sommer case par case
 				tabInter[i]= tab1[i] + tab2[i];
-			
 		}catch  (VectorDifferentSizeException e){ // catch the exception
 			e.printStackTrace();
 		}
