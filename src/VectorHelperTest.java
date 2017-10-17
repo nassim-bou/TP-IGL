@@ -27,32 +27,27 @@ public class VectorHelperTest extends TestCase {
 
     public void testSortVector() throws Exception {
 
-        VectorHelper.sortVector(TAB1);
+        int tab[] = VectorHelper.sortVector(TAB1);
         boolean sorted=true;
 
-        for(int i=0 ; i<TAB1.length-1 ; i++ ) {
-            if (TAB1[i]>TAB1[i+1])
+        for(int i=0 ; i<tab.length-1 ; i++ ) {
+            if (tab[i]>tab[i+1])
                 sorted = false;
         }
         assertEquals(sorted,true);
     }
 
     public void testReverseVector() throws Exception {
-        VectorHelper.reverseVector(TAB1);
-        for (int i = 0 ; i < TAB1.length ; i++)
-            assertEquals(TAB1[i],REVERSED_TAB1[i]);
+        int tab[] = VectorHelper.reverseVector(TAB1);
+        for (int i = 0 ; i < tab.length ; i++)
+            assertEquals(tab[i],tab[i]);
     }
 
     public void testMultiplyVector() throws Exception {
-        VectorHelper.multiplyVector(TAB1,2);
-        boolean equals = true;
-        int i = 0;
-        while (i<TAB1.length && equals) {
-            if (TAB1[i] != TAB1_MULTI_2[i])
-                equals = false;
-            i++;
-        }
-        assertEquals(equals,true);
+        int tab[] = VectorHelper.multiplyVector(TAB1,2);
+        for (int i = 0 ; i < tab.length ; i++)
+            assertEquals(tab[i],TAB1_MULTI_2[i]);
+
     }
 
 }
