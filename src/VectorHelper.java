@@ -32,26 +32,40 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tabInt;
 	}
 
-	public static void sortVector( int tab[] ) { // Trier le tableau tab en utilisant un tri par bull
+	public static void copyVector ( int tab1[] , int tab2[] ) {
+		tab2 = new int[tab1.length];
+		for (int i = 0 ; i < tab1.length ; i++ )
+			tab2[i] = tab1[i];
+	}
+
+	public static int[] sortVector( int tab[] ) { // Trier le tableau tab en utilisant un tri par bull
+
+		int tab2[] = null;
+		copyVector(tab,tab2);
 
 		boolean permut=true; // nous indique si il y'avait une perumtaion
 		int inter; // variable intermédiare
 
 		while (permut) {
 			permut = false;
-			for (int i = 0; i < tab.length - 1; i++) {
-				if (tab[i] > tab[i + 1]) {
+			for (int i = 0; i < tab2.length - 1; i++) {
+				if (tab2[i] > tab2[i + 1]) {
 					permut = true;
 					// Permuter
-					inter = tab[i];
-					tab[i] = tab[i + 1];
-					tab[i+1] = inter;
+					inter = tab2[i];
+					tab2[i] = tab2[i + 1];
+					tab2[i+1] = inter;
 				}
 			}
 		}
+		return tab2;
 	}
 
-	public static void reverseVector ( int tab[]) { // inverser l'ordre des elements de tab
+	public static int[] reverseVector ( int tab[]) { // inverser l'ordre des elements de tab
+
+		int tab2[] = null;
+		copyVector(tab,tab2);
+
 		/*
 		Example d'utilisation :
 			int tab[] = {31,54,8,64,89,102,35,45,1,25,-5};
@@ -63,17 +77,23 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 
 		int j = 0; // varibale inter pour la permutation
 
-		for (int i = 0 ; i<(tab.length / 2)-1  ; i++) {
-			j = tab[i]; // permutation
-			tab[i] = tab[tab.length - i -1  ];
-			tab[tab.length - i -1 ] = j;
+		for (int i = 0 ; i<(tab2.length / 2)-1  ; i++) {
+			j = tab2[i]; // permutation
+			tab2[i] = tab2[tab2.length - i -1  ];
+			tab2[tab2.length - i -1 ] = j;
 		}
-
+		return tab2;
 	}
 
-	public static void multiplyVector ( int tab[] , int facteur) { //multiplier chaque case par facteur
-		for (int i = 0 ; i<tab.length ; i++)
-			tab[i] *= facteur ;
+	public static int[] multiplyVector ( int tab[] , int facteur) { //multiplier chaque case par facteur
+
+		int tab2[] = null;
+		copyVector(tab,tab2);
+
+		for (int i = 0 ; i<tab2.length ; i++)
+			tab2[i] *= facteur ;
+
+		return tab2;
 	}
 
 	public static void printVector (int tab[]) { //afficher le tableau
