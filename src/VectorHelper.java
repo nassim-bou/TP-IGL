@@ -81,5 +81,9 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		for (int i = 0 ; i<tab.length ; i++) {
 			System.out.println(i + " - " + tab[i]);
 		}
+
+	public static void applyFunction ( int tab[] , Function  )
+
+
 	}
 }
