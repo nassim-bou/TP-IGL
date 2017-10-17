@@ -1,12 +1,21 @@
-/*
-    Author : Amine Athmani
-    Date : 11/10/2017
+/**
+ 	* ce projet est dans le cadre du TP IGL 1 CS
+ 	* @version : 1.0
+    * @author : Amine Athmani , Nassim Bouarour
+    * Date : 11/10/2017
  */
 
-
-public class VectorHelper  { // Fournir des fonctions sur les vecteurs
-	
-	public static int[] Sommer (int tab1[], int tab2[]){ // Sommer deux tableau case par case et génere un troisieme tableau
+/**
+ * Cette classe est une classe utilitaire pour établir des methodes sur les vecteurs
+ */
+public class VectorHelper  {
+	/**
+	 * sommer deux tableau case par case et génere un troisieme tableau
+	 * @param tab1 : tableau d'entiers 1
+	 * @param tab2 : tableau d'entiers 2
+	 * @return un tableau d'entiers dont chaque case est la somme de deux cases tab1[i] + tab2[i]
+	 */
+	public static int[] sommer(int tab1[], int tab2[]) throws VectorDifferentSizeException{
 		int tabInter [] = null ;
 		try{
 			if (tab1.length != tab2.length)
@@ -14,8 +23,6 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 			tabInter = new int [tab1.length];
 			for (int i=0 ; i <tab1.length ; i++) // sommer case par case
 				tabInter[i]= tab1[i] + tab2[i];
-		}catch  (VectorDifferentSizeException e){ // catch the exception
-			e.printStackTrace();
 		}
 		return tabInter;
 	}

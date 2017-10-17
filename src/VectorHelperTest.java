@@ -12,13 +12,13 @@ public class VectorHelperTest extends TestCase {
     public static final int TAB1_PLUS_TAB2[] = {42,76,41,108,144,168,112,133,100,35,6};
 
     public void testSommer() throws Exception {
-        int tab[] = VectorHelper.Sommer(TAB1,TAB2);
+        int tab[] = VectorHelper.sommer(TAB1,TAB2);
 
         for (int i=0 ; i < tab.length ; i++ ) {
             assertEquals(tab[i],TAB1_PLUS_TAB2[i]);
         }
     }
-    
+
     public void testMaxMin() throws Exception {
         int tab[] = VectorHelper.maxMin(TAB1);
         assertEquals(tab[1],-5);
