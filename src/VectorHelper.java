@@ -32,16 +32,17 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 		return tabInt;
 	}
 
-	public static void copyVector ( int tab1[] , int tab2[] ) {
-		tab2 = new int[tab1.length];
+	public static int[] copyVector ( int tab1[]  ) {
+		int tab2[] = new int[tab1.length];
 		for (int i = 0 ; i < tab1.length ; i++ )
 			tab2[i] = tab1[i];
+
+		return tab2;
 	}
 
 	public static int[] sortVector( int tab[] ) { // Trier le tableau tab en utilisant un tri par bull
 
-		int tab2[] = null;
-		copyVector(tab,tab2);
+		int tab2[] = copyVector(tab);
 
 		boolean permut=true; // nous indique si il y'avait une perumtaion
 		int inter; // variable intermédiare
@@ -63,8 +64,7 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 
 	public static int[] reverseVector ( int tab[]) { // inverser l'ordre des elements de tab
 
-		int tab2[] = null;
-		copyVector(tab,tab2);
+		int tab2[] = copyVector(tab);
 
 		/*
 		Example d'utilisation :
@@ -87,8 +87,7 @@ public class VectorHelper  { // Fournir des fonctions sur les vecteurs
 
 	public static int[] multiplyVector ( int tab[] , int facteur) { //multiplier chaque case par facteur
 
-		int tab2[] = null;
-		copyVector(tab,tab2);
+		int tab2[] = copyVector(tab);
 
 		for (int i = 0 ; i<tab2.length ; i++)
 			tab2[i] *= facteur ;
