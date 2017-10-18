@@ -29,7 +29,7 @@ public class VectorHelper  {
 				throw new VectorDifferentSizeException(); // Lancer une exception ( taille differente )
 			tabInter = new int [tab1.length];
 			for (int i=0 ; i <tab1.length ; i++) // sommer case par case
-				tabInter[i]= tab1[i] + tab2[i];
+				tabInter[i]= tab1[i] - tab2[i];
 		return tabInter;
 	}
 
